@@ -10,7 +10,7 @@ int mai() {
 
 	st2.name = "bogdan";
 	st2.age = 15;
-	st2.mark = 8;
+	st2.mark = 7;
 	st2.alive = true;
 
 
