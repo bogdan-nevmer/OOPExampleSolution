@@ -13,9 +13,16 @@ int mai() {
 	st2.mark = 7;
 	st2.alive = true;
 
-
+	cout << "before" << endl;
 	cout<<st1.getstring()<<endl;
 	cout<< st2.getstring() <<endl;
+	
+	st1 = st2;
+	st1.name = "bogdan";
+
+	cout << "after" << endl;
+	cout << st1.getstring() << endl;
+	cout << st2.getstring() << endl;
 
 	return 0;
 }
