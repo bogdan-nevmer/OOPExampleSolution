@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -8,4 +9,17 @@ public:
 	int age;
 	double mark;
 	bool alive;
+
+	string getstring() {
+		string s = "name" + name;
+		s += ",age" + to_string(age);
+		s += ",mark " + to_string(mark);
+		s += ", alive " ;
+		s += alive ? "yes" : "no";
+		return s;
+
+
+	
+
+	}
 };
