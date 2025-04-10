@@ -10,13 +10,22 @@ public:
 	double mark;
 	bool alive;
 
-	Student() {
+	/*Student(string nm) {
 		cout << "defalt" << endl;
-		name = "no name";
+		name = nm;
 		age = 13;
 		mark = 4.0;
 		alive = true;
 	}
+
+	Student(string nm,int a,double m , double alv) {
+		cout << "defalt" << endl;
+		name = nm;
+		age = a < 13 ? 1 : a;
+		mark = 4.0;
+		alive = true;
+	}
+*/
 
 	string tostring() {
 		string s = "name" + name;
