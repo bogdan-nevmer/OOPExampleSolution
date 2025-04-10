@@ -10,7 +10,15 @@ public:
 	double mark;
 	bool alive;
 
-	string getstring() {
+	Student() {
+		cout << "defalt" << endl;
+		name = "no name";
+		age = 13;
+		mark = 4.0;
+		alive = true;
+	}
+
+	string tostring() {
 		string s = "name" + name;
 		s += ",age" + to_string(age);
 		s += ",mark " + to_string(mark);

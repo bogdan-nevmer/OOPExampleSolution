@@ -2,30 +2,17 @@
 
 
 int mai() {
-	Student* st1=nullptr;
-	Student* st2 = nullptr;
-	st1 = new Student;
 
-	st1->name = "veronika";
-	st1->age = 14;
-	st1->mark = 9.2;
-	st1->alive = true;
-	   
-	st2->name = "bogdan";
-	st2->age = 15;
-	st2->mark = 7;
-	st2->alive = true;
-
-	cout << "before" << endl;
-	cout<<st1->getstring()<<endl;
-	cout<< st2->getstring() <<endl;
 	
-	st1 = st2;
-	st1->name = "bogdan";
 
-	cout << "after" << endl;
-	cout << st1->getstring() << endl;
-	cout << st2->getstring() << endl;
+	Student  student1{};
+
+	cout << "before" << student1.tostring() << endl;
+	student1.name="alex";
+	student1.age = 15;
+	student1.mark= 7.4;
+	student1.alive = true;
+	cout << "after" << student1.tostring() << endl;
 
 	return 0;
 }
